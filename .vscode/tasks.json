@@ -1,0 +1,109 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "compile-categorias",
+			"type": "shell",
+			"command": ".\\gradlew.bat",
+			"args": [
+				":categorias:compileJava"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "compile-configserver",
+			"type": "shell",
+			"command": ".\\gradlew.bat",
+			"args": [
+				":configserver:compileJava"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "compile-configserver-after-fix",
+			"type": "shell",
+			"command": ".\\gradlew.bat",
+			"args": [
+				":configserver:compileJava"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "compile-configserver-resources",
+			"type": "shell",
+			"command": ".\\gradlew.bat",
+			"args": [
+				":configserver:processResources"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "compile-categorias-without-bootstrap",
+			"type": "shell",
+			"command": ".\\gradlew.bat",
+			"args": [
+				":categorias:compileJava"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "compile-productos-without-bootstrap",
+			"type": "shell",
+			"command": ".\\gradlew.bat",
+			"args": [
+				":productos:compileJava"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "compile-configserver-eureka",
+			"type": "shell",
+			"command": ".\\gradlew.bat",
+			"args": [
+				":configserver:compileJava"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "compile-eurekaserver",
+			"type": "shell",
+			"command": ".\\gradlew.bat",
+			"args": [
+				":eurekaserver:compileJava"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		}
+	]
+}
